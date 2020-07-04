@@ -12,6 +12,7 @@ OpenGl中如何处理当前的缩放倍数、中心点坐标，核心代码如�
 
 - (void)setPositionWithCoord:(GLfloat *)coord {
 
+
     int length = 8; //(int)sizeof(coordVertices)/GLfloat;
     
     if(coord != NULL) {
@@ -33,9 +34,7 @@ OpenGl中如何处理当前的缩放倍数、中心点坐标，核心代码如�
             coord++;
             
         }
-        
     }
-    
     //    更新放大区域
     
     glVertexAttribPointer(ATTRIB_TEXTURE, 2, GL_FLOAT, 0, 0, coordVertices);
